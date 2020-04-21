@@ -26,5 +26,13 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "comma-dangle": [
+            "warn",
+            "never"
+        ]
     }
 }
