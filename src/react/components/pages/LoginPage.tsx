@@ -10,16 +10,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            '& > *': {
-                margin: theme.spacing(1),
-                width: '25ch',
-            },
-        },
-    }),
-);
+
 
 
 const LoginPage = () => {
