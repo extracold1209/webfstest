@@ -1,11 +1,6 @@
-import express from 'express';
-import path from 'path';
+import app from './express';
+import config from '../../config';
+import fileManager from './src/fileManager';
 
-const app = express();
-
-app.use('/static', express.static(path.join(__dirname, '..', '..', 'public')));
-
-app.get('/', (req: express.Request, res: express.Response) => {
-    res.send('start');
-})
+fileManager.initialize(config.rootDirectory);
 app.listen(4000, () => console.log('server started'));
