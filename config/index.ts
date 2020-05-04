@@ -1,5 +1,5 @@
 import path from 'path';
 
 export default {
-    rootDirectory: path.join(__dirname, '..', 'uploads')
+    rootDirectory: path.join(__dirname, '..', 'upload')
 }

@@ -9,12 +9,13 @@ class FileManager {
     }
 
     public getRawFileStream(filePaths: string | string[]) {
+        let fullFilePath = '';
         if (Array.isArray(filePaths)) {
-            const fullFilePath = path.join(this.rootDirectoryPath, ...filePaths);
-            return createReadStream(fullFilePath);
+            fullFilePath = path.join(this.rootDirectoryPath, ...filePaths);
         } else {
-
+            fullFilePath = path.join(this.rootDirectoryPath, filePaths);
         }
+        return createReadStream(fullFilePath);
     }
 }
 
